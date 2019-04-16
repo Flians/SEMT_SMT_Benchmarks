@@ -1,0 +1,38 @@
+;********************
+;* IOs              *
+;********************
+define _cell (geGetEditCell)
+dbSetPinLocation _cell "N1" "metal3" '((0.0000 1.3900)(0.0700 1.4600))
+dbSetPinLocation _cell "N2" "metal2" '((2.3400 2.4000)(2.4100 2.4700))
+dbSetPinLocation _cell "N3" "metal3" '((0.0000 1.0100)(0.0700 1.0800))
+dbSetPinLocation _cell "N6" "metal2" '((1.5800 2.4000)(1.6500 2.4700))
+dbSetPinLocation _cell "N7" "metal2" '((5.0000 2.4000)(5.0700 2.4700))
+dbSetPinLocation _cell "N22" "metal2" '((3.6700 2.4000)(3.7400 2.4700))
+dbSetPinLocation _cell "N23" "metal3" '((6.4450 1.2000)(6.5150 1.2700))
+;********************
+;* Block Cells   *
+;********************
+dbSetCurrentRegionNumber _cell 0
+;********************
+;* Standard Cells   *
+;********************
+dbSetCurrentRegionNumber _cell 0
+dbSetCellInstPlacement _cell "gate1" "0" "Y" "ll" '(0.0000 0.0000)
+dbSetCellInstPlacement _cell "gate2" "0" "Y" "ll" '(1.1400 0.0000)
+dbSetCellInstPlacement _cell "gate3" "0" "Y" "ll" '(2.2800 0.0000)
+dbSetCellInstPlacement _cell "gate4" "0" "Y" "ll" '(4.5600 0.0000)
+dbSetCellInstPlacement _cell "gate5" "0" "Y" "ll" '(3.4200 0.0000)
+dbSetCellInstPlacement _cell "gate6" "0" "Y" "ll" '(5.7000 0.0000)
+;********************
+;* Rows             *
+;********************
+define _cell (geGetEditCell)
+axPurgeSingleRecordType _cell "tile pattern"
+axPurgeSingleRecordType _cell "row"
+axPurgeSingleRecordType _cell "base array"
+axCreateBaseArrayRecord _cell "unit" #t '(0.0000 0.0000) '(6.4600 2.4700)
+axCreateTilePatternRecord _cell "unit" "unit" #t #f
+axCreateTilePatternRecord _cell "unit" "unit-flip" #t #t
+axCreateTilePatternRecord _cell "unit" "unit-v" #f #f
+axCreateTilePatternRecord _cell "unit" "unit-flip-v" #f #t
+axCreateRowRecord _cell #t #t "unit-flip" '(0.0000 0.0000) '(6.4600 2.4700)

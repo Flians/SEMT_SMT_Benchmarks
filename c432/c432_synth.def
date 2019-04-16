@@ -1,0 +1,1397 @@
+#
+# created by First Encounter v08.10-s372_1 on Fri Nov 16 11:49:41 2018
+#
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN c432_synth ;
+UNITS DISTANCE MICRONS 2000 ;
+
+PROPERTYDEFINITIONS
+    COMPONENTPIN designRuleWidth REAL ;
+    DESIGN FE_CORE_BOX_LL_X REAL 0.000 ;
+    DESIGN FE_CORE_BOX_UR_X REAL 26.410 ;
+    DESIGN FE_CORE_BOX_LL_Y REAL 0.000 ;
+    DESIGN FE_CORE_BOX_UR_Y REAL 24.700 ;
+END PROPERTYDEFINITIONS
+
+DIEAREA ( 0 0 ) ( 52820 49400 ) ;
+
+ROW CORE_ROW_0 CoreSite 0 0 FS DO 69 BY 1 STEP 760 0 ;
+ROW CORE_ROW_1 CoreSite 0 4940 N DO 69 BY 1 STEP 760 0 ;
+ROW CORE_ROW_2 CoreSite 0 9880 FS DO 69 BY 1 STEP 760 0 ;
+ROW CORE_ROW_3 CoreSite 0 14820 N DO 69 BY 1 STEP 760 0 ;
+ROW CORE_ROW_4 CoreSite 0 19760 FS DO 69 BY 1 STEP 760 0 ;
+ROW CORE_ROW_5 CoreSite 0 24700 N DO 69 BY 1 STEP 760 0 ;
+ROW CORE_ROW_6 CoreSite 0 29640 FS DO 69 BY 1 STEP 760 0 ;
+ROW CORE_ROW_7 CoreSite 0 34580 N DO 69 BY 1 STEP 760 0 ;
+ROW CORE_ROW_8 CoreSite 0 39520 FS DO 69 BY 1 STEP 760 0 ;
+ROW CORE_ROW_9 CoreSite 0 44460 N DO 69 BY 1 STEP 760 0 ;
+
+TRACKS Y 3610 DO 14 STEP 3420 LAYER metal10 ;
+TRACKS X 3550 DO 15 STEP 3360 LAYER metal10 ;
+TRACKS X 1870 DO 31 STEP 1680 LAYER metal9 ;
+TRACKS Y 3610 DO 14 STEP 3420 LAYER metal9 ;
+TRACKS Y 2090 DO 25 STEP 1900 LAYER metal8 ;
+TRACKS X 1870 DO 31 STEP 1680 LAYER metal8 ;
+TRACKS X 750 DO 93 STEP 560 LAYER metal7 ;
+TRACKS Y 2090 DO 25 STEP 1900 LAYER metal7 ;
+TRACKS Y 760 DO 86 STEP 570 LAYER metal6 ;
+TRACKS X 750 DO 93 STEP 560 LAYER metal6 ;
+TRACKS X 750 DO 93 STEP 560 LAYER metal5 ;
+TRACKS Y 760 DO 86 STEP 570 LAYER metal5 ;
+TRACKS Y 190 DO 130 STEP 380 LAYER metal4 ;
+TRACKS X 750 DO 93 STEP 560 LAYER metal4 ;
+TRACKS X 190 DO 139 STEP 380 LAYER metal3 ;
+TRACKS Y 190 DO 130 STEP 380 LAYER metal3 ;
+TRACKS Y 190 DO 130 STEP 380 LAYER metal2 ;
+TRACKS X 190 DO 139 STEP 380 LAYER metal2 ;
+TRACKS X 190 DO 139 STEP 380 LAYER metal1 ;
+TRACKS Y 190 DO 130 STEP 380 LAYER metal1 ;
+
+GCELLGRID X 49590 DO 2 STEP 3230 ;
+GCELLGRID X 190 DO 14 STEP 3800 ;
+GCELLGRID X 0 DO 2 STEP 190 ;
+GCELLGRID Y 45790 DO 2 STEP 3610 ;
+GCELLGRID Y 190 DO 13 STEP 3800 ;
+GCELLGRID Y 0 DO 2 STEP 190 ;
+
+COMPONENTS 215 ;
+- gate1 INVX1 + PLACED ( 47880 39520 ) FS
+ ;
+- gate2 INVX1 + PLACED ( 44840 39520 ) FS
+ ;
+- gate3 INVX1 + PLACED ( 38000 39520 ) FS
+ ;
+- gate4 INVX1 + PLACED ( 34200 44460 ) N
+ ;
+- gate5 INVX1 + PLACED ( 0 29640 ) FS
+ ;
+- gate6 INVX1 + PLACED ( 8360 29640 ) FS
+ ;
+- gate7 INVX1 + PLACED ( 9880 44460 ) N
+ ;
+- gate8 INVX1 + PLACED ( 10640 39520 ) FS
+ ;
+- gate9 INVX1 + PLACED ( 1520 9880 ) FS
+ ;
+- gate10 INVX1 + PLACED ( 0 14820 ) N
+ ;
+- gate11 INVX1 + PLACED ( 7600 0 ) FS
+ ;
+- gate12 INVX1 + PLACED ( 15200 0 ) FS
+ ;
+- gate13 INVX1 + PLACED ( 22040 4940 ) N
+ ;
+- gate14 INVX1 + PLACED ( 31920 0 ) FS
+ ;
+- gate15 INVX1 + PLACED ( 50920 0 ) FS
+ ;
+- gate16 INVX1 + PLACED ( 43320 4940 ) N
+ ;
+- gate17 INVX1 + PLACED ( 50920 9880 ) FS
+ ;
+- gate18 INVX1 + PLACED ( 49400 19760 ) FS
+ ;
+- gate19 NAND2X1 + PLACED ( 46360 39520 ) FS
+ ;
+- gate20 NOR2X1 + PLACED ( 44080 29640 ) FS
+ ;
+- gate21 NOR2X1 + PLACED ( 42560 29640 ) FS
+ ;
+- gate22 NAND2X1 + PLACED ( 39520 39520 ) FS
+ ;
+- gate23 NAND2X1 + PLACED ( 1520 29640 ) FS
+ ;
+- gate24 NAND2X1 + PLACED ( 6080 39520 ) FS
+ ;
+- gate25 NAND2X1 + PLACED ( 0 9880 ) FS
+ ;
+- gate26 NAND2X1 + PLACED ( 760 0 ) FS
+ ;
+- gate27 NAND2X1 + PLACED ( 23560 4940 ) N
+ ;
+- gate28 NAND2X1 + PLACED ( 49400 0 ) FS
+ ;
+- gate29 NAND2X1 + PLACED ( 50160 14820 ) N
+ ;
+- gate30 NOR2X1 + PLACED ( 31920 39520 ) FS
+ ;
+- gate31 NOR2X1 + PLACED ( 34960 39520 ) FS
+ ;
+- gate32 NOR2X1 + PLACED ( 9880 29640 ) FS
+ ;
+- gate33 NOR2X1 + PLACED ( 8360 24700 ) N
+ ;
+- gate34 NOR2X1 + PLACED ( 12160 39520 ) FS
+ ;
+- gate35 NOR2X1 + PLACED ( 9120 39520 ) FS
+ ;
+- gate36 NOR2X1 + PLACED ( 3040 14820 ) N
+ ;
+- gate37 NOR2X1 + PLACED ( 1520 14820 ) N
+ ;
+- gate38 NOR2X1 + PLACED ( 6080 4940 ) N
+ ;
+- gate39 NOR2X1 + PLACED ( 9120 0 ) FS
+ ;
+- gate40 NOR2X1 + PLACED ( 27360 0 ) FS
+ ;
+- gate41 NOR2X1 + PLACED ( 25080 0 ) FS
+ ;
+- gate42 NOR2X1 + PLACED ( 40280 0 ) FS
+ ;
+- gate43 NOR2X1 + PLACED ( 41800 0 ) FS
+ ;
+- gate44 NOR2X1 + PLACED ( 47880 14820 ) N
+ ;
+- gate45 NOR2X1 + PLACED ( 46360 14820 ) N
+ ;
+- gate46_1 AND2X1 + PLACED ( 41040 44460 ) N
+ ;
+- gate46_2 AND2X1 + PLACED ( 6080 29640 ) FS
+ ;
+- gate46_3 AND2X1 + PLACED ( 0 4940 ) N
+ ;
+- gate46_4 AND2X1 + PLACED ( 32680 4940 ) N
+ ;
+- gate46_5 AND2X1 + PLACED ( 39520 14820 ) N
+ ;
+- gate46_6 AND2X1 + PLACED ( 8360 9880 ) FS
+ ;
+- gate46_7 AND2X1 + PLACED ( 33440 9880 ) FS
+ ;
+- gate46 AND2X1 + PLACED ( 12160 9880 ) FS
+ ;
+- gate47 INVX1 + PLACED ( 12920 4940 ) N
+ ;
+- gate48 INVX1 + PLACED ( 14440 4940 ) N
+ ;
+- gate49 INVX1 + PLACED ( 15960 4940 ) N
+ ;
+- gate50 XOR2X1 + PLACED ( 41040 39520 ) FS
+ ;
+- gate51 XOR2X1 + PLACED ( 40280 34580 ) N
+ ;
+- gate52 XOR2X1 + PLACED ( 4560 24700 ) N
+ ;
+- gate53 XOR2X1 + PLACED ( 5320 34580 ) N
+ ;
+- gate54 XOR2X1 + PLACED ( 4560 9880 ) FS
+ ;
+- gate55 XOR2X1 + PLACED ( 2280 4940 ) N
+ ;
+- gate56 NAND2X1 + PLACED ( 49400 39520 ) FS
+ ;
+- gate57 XOR2X1 + PLACED ( 25080 4940 ) N
+ ;
+- gate58 NAND2X1 + PLACED ( 25840 39520 ) FS
+ ;
+- gate59 XOR2X1 + PLACED ( 33440 0 ) FS
+ ;
+- gate60 NAND2X1 + PLACED ( 0 39520 ) FS
+ ;
+- gate61 XOR2X1 + PLACED ( 41040 19760 ) FS
+ ;
+- gate62 NAND2X1 + PLACED ( 16720 39520 ) FS
+ ;
+- gate63 NAND2X1 + PLACED ( 3040 9880 ) FS
+ ;
+- gate64 NAND2X1 + PLACED ( 3040 0 ) FS
+ ;
+- gate65 NAND2X1 + PLACED ( 16720 0 ) FS
+ ;
+- gate66 NAND2X1 + PLACED ( 50160 4940 ) N
+ ;
+- gate67 NAND2X1 + PLACED ( 48640 9880 ) FS
+ ;
+- gate68 NAND2X1 + PLACED ( 39520 29640 ) FS
+ ;
+- gate69 NAND2X1 + PLACED ( 41040 29640 ) FS
+ ;
+- gate70 NAND2X1 + PLACED ( 33440 34580 ) N
+ ;
+- gate71 NAND2X1 + PLACED ( 11400 29640 ) FS
+ ;
+- gate72 NAND2X1 + PLACED ( 12920 29640 ) FS
+ ;
+- gate73 NAND2X1 + PLACED ( 7600 14820 ) N
+ ;
+- gate74 NAND2X1 + PLACED ( 8360 4940 ) N
+ ;
+- gate75 NAND2X1 + PLACED ( 28880 0 ) FS
+ ;
+- gate76 NAND2X1 + PLACED ( 37240 0 ) FS
+ ;
+- gate77 NAND2X1 + PLACED ( 44840 19760 ) FS
+ ;
+- gate78 NAND2X1 + PLACED ( 34960 34580 ) N
+ ;
+- gate79 NAND2X1 + PLACED ( 9880 24700 ) N
+ ;
+- gate80 NAND2X1 + PLACED ( 9880 34580 ) N
+ ;
+- gate81 NAND2X1 + PLACED ( 9120 14820 ) N
+ ;
+- gate82 NAND2X1 + PLACED ( 9880 4940 ) N
+ ;
+- gate83 NAND2X1 + PLACED ( 30400 0 ) FS
+ ;
+- gate84 NAND2X1 + PLACED ( 38760 0 ) FS
+ ;
+- gate85 NAND2X1 + PLACED ( 46360 19760 ) FS
+ ;
+- gate86_1 AND2X1 + PLACED ( 35720 24700 ) N
+ ;
+- gate86_2 AND2X1 + PLACED ( 12920 24700 ) N
+ ;
+- gate86_3 AND2X1 + PLACED ( 12160 14820 ) N
+ ;
+- gate86_4 AND2X1 + PLACED ( 31160 9880 ) FS
+ ;
+- gate86_5 AND2X1 + PLACED ( 37240 19760 ) FS
+ ;
+- gate86_6 AND2X1 + PLACED ( 22040 14820 ) N
+ ;
+- gate86_7 AND2X1 + PLACED ( 33440 14820 ) N
+ ;
+- gate86 AND2X1 + PLACED ( 24320 14820 ) N
+ ;
+- gate87 INVX1 + PLACED ( 38000 29640 ) FS
+ ;
+- gate88 INVX1 + PLACED ( 34960 29640 ) FS
+ ;
+- gate89 INVX1 + PLACED ( 11400 24700 ) N
+ ;
+- gate90 INVX1 + PLACED ( 12160 34580 ) N
+ ;
+- gate91 INVX1 + PLACED ( 10640 14820 ) N
+ ;
+- gate92 INVX1 + PLACED ( 10640 9880 ) FS
+ ;
+- gate93 INVX1 + PLACED ( 29640 9880 ) FS
+ ;
+- gate94 INVX1 + PLACED ( 40280 4940 ) N
+ ;
+- gate95 INVX1 + PLACED ( 39520 19760 ) FS
+ ;
+- gate96 INVX1 + PLACED ( 21280 9880 ) FS
+ ;
+- gate97 INVX1 + PLACED ( 19760 9880 ) FS
+ ;
+- gate98 INVX1 + PLACED ( 22800 0 ) FS
+ ;
+- gate99 XOR2X1 + PLACED ( 36480 34580 ) N
+ ;
+- gate100 XOR2X1 + PLACED ( 31920 24700 ) N
+ ;
+- gate101 XOR2X1 + PLACED ( 13680 34580 ) N
+ ;
+- gate102 XOR2X1 + PLACED ( 15200 24700 ) N
+ ;
+- gate103 NAND2X1 + PLACED ( 47120 29640 ) FS
+ ;
+- gate104 XOR2X1 + PLACED ( 14440 14820 ) N
+ ;
+- gate105 NAND2X1 + PLACED ( 30400 39520 ) FS
+ ;
+- gate106 XOR2X1 + PLACED ( 14440 9880 ) FS
+ ;
+- gate107 NAND2X1 + PLACED ( 3040 39520 ) FS
+ ;
+- gate108 XOR2X1 + PLACED ( 28880 4940 ) N
+ ;
+- gate109 NAND2X1 + PLACED ( 15200 39520 ) FS
+ ;
+- gate110 XOR2X1 + PLACED ( 35720 9880 ) FS
+ ;
+- gate111 NAND2X1 + PLACED ( 4560 14820 ) N
+ ;
+- gate112 XOR2X1 + PLACED ( 33440 19760 ) FS
+ ;
+- gate113 NAND2X1 + PLACED ( 6080 0 ) FS
+ ;
+- gate114 NAND2X1 + PLACED ( 19760 0 ) FS
+ ;
+- gate115 NAND2X1 + PLACED ( 47880 0 ) FS
+ ;
+- gate116 NAND2X1 + PLACED ( 47120 9880 ) FS
+ ;
+- gate117 NAND2X1 + PLACED ( 36480 29640 ) FS
+ ;
+- gate118 NAND2X1 + PLACED ( 33440 29640 ) FS
+ ;
+- gate119 NAND2X1 + PLACED ( 14440 29640 ) FS
+ ;
+- gate120 NAND2X1 + PLACED ( 15960 29640 ) FS
+ ;
+- gate121 NAND2X1 + PLACED ( 18240 14820 ) N
+ ;
+- gate122 NAND2X1 + PLACED ( 18240 9880 ) FS
+ ;
+- gate123 NAND2X1 + PLACED ( 34960 4940 ) N
+ ;
+- gate124 NAND2X1 + PLACED ( 38760 4940 ) N
+ ;
+- gate125 NAND2X1 + PLACED ( 31920 19760 ) FS
+ ;
+- gate126_1 AND2X1 + PLACED ( 31160 29640 ) FS
+ ;
+- gate126_2 AND2X1 + PLACED ( 19000 24700 ) N
+ ;
+- gate126_3 AND2X1 + PLACED ( 19760 14820 ) N
+ ;
+- gate126_4 AND2X1 + PLACED ( 36480 4940 ) N
+ ;
+- gate126_5 AND2X1 + PLACED ( 29640 19760 ) FS
+ ;
+- gate126_6 AND2X1 + PLACED ( 21280 19760 ) FS
+ ;
+- gate126_7 AND2X1 + PLACED ( 29640 14820 ) N
+ ;
+- gate126 AND2X1 + PLACED ( 22800 9880 ) FS
+ ;
+- gate127 INVX1 + PLACED ( 26600 9880 ) FS
+ ;
+- gate128 INVX1 + PLACED ( 25080 9880 ) FS
+ ;
+- gate129 NAND2X1 + PLACED ( 45600 29640 ) FS
+ ;
+- gate130 NAND2X1 + PLACED ( 36480 39520 ) FS
+ ;
+- gate131 NAND2X1 + PLACED ( 3040 29640 ) FS
+ ;
+- gate132 NAND2X1 + PLACED ( 7600 39520 ) FS
+ ;
+- gate133 NAND2X1 + PLACED ( 760 19760 ) FS
+ ;
+- gate134 NAND2X1 + PLACED ( 10640 0 ) FS
+ ;
+- gate135 NAND2X1 + PLACED ( 21280 0 ) FS
+ ;
+- gate136 NAND2X1 + PLACED ( 44080 0 ) FS
+ ;
+- gate137 NAND2X1 + PLACED ( 44840 14820 ) N
+ ;
+- gate138_1 NAND2X1 + PLACED ( 50920 39520 ) FS
+ ;
+- gate138_2 NAND2X1 + PLACED ( 48640 29640 ) FS
+ ;
+- gate138 NAND2X1 + PLACED ( 50920 29640 ) FS
+ ;
+- gate139_1 NAND2X1 + PLACED ( 27360 39520 ) FS
+ ;
+- gate139_2 NAND2X1 + PLACED ( 33440 39520 ) FS
+ ;
+- gate139 NAND2X1 + PLACED ( 28880 39520 ) FS
+ ;
+- gate140_1 NAND2X1 + PLACED ( 1520 39520 ) FS
+ ;
+- gate140_2 NAND2X1 + PLACED ( 4560 29640 ) FS
+ ;
+- gate140 NAND2X1 + PLACED ( 4560 39520 ) FS
+ ;
+- gate141_1 NAND2X1 + PLACED ( 18240 39520 ) FS
+ ;
+- gate141_2 NAND2X1 + PLACED ( 13680 39520 ) FS
+ ;
+- gate141 NAND2X1 + PLACED ( 19760 39520 ) FS
+ ;
+- gate142_1 NAND2X1 + PLACED ( 6080 14820 ) N
+ ;
+- gate142_2 NAND2X1 + PLACED ( 3040 19760 ) FS
+ ;
+- gate142 NAND2X1 + PLACED ( 6840 19760 ) FS
+ ;
+- gate143_1 NAND2X1 + PLACED ( 4560 0 ) FS
+ ;
+- gate143_2 NAND2X1 + PLACED ( 12160 0 ) FS
+ ;
+- gate143 NAND2X1 + PLACED ( 13680 0 ) FS
+ ;
+- gate144_1 NAND2X1 + PLACED ( 18240 0 ) FS
+ ;
+- gate144_2 NAND2X1 + PLACED ( 20520 4940 ) N
+ ;
+- gate144 NAND2X1 + PLACED ( 18240 4940 ) N
+ ;
+- gate145_1 NAND2X1 + PLACED ( 47880 4940 ) N
+ ;
+- gate145_2 NAND2X1 + PLACED ( 46360 0 ) FS
+ ;
+- gate145 NAND2X1 + PLACED ( 45600 4940 ) N
+ ;
+- gate146_1 NAND2X1 + PLACED ( 44840 9880 ) FS
+ ;
+- gate146_2 NAND2X1 + PLACED ( 43320 14820 ) N
+ ;
+- gate146 NAND2X1 + PLACED ( 41800 14820 ) N
+ ;
+- gate147 INVX1 + PLACED ( 50160 24700 ) N
+ ;
+- gate148_1 AND2X1 + PLACED ( 28120 34580 ) N
+ ;
+- gate148_2 AND2X1 + PLACED ( 28880 29640 ) FS
+ ;
+- gate148_3 AND2X1 + PLACED ( 23560 19760 ) FS
+ ;
+- gate148_4 AND2X1 + PLACED ( 26600 14820 ) N
+ ;
+- gate148_5 AND2X1 + PLACED ( 31160 34580 ) N
+ ;
+- gate148_6 AND2X1 + PLACED ( 26600 19760 ) FS
+ ;
+- gate148 AND2X1 + PLACED ( 27360 24700 ) N
+ ;
+- gate149 INVX1 + PLACED ( 24320 44460 ) N
+ ;
+- gate150 INVX1 + PLACED ( 19000 19760 ) FS
+ ;
+- gate151 INVX1 + PLACED ( 22800 24700 ) N
+ ;
+- gate152 INVX1 + PLACED ( 25840 24700 ) N
+ ;
+- gate153 NOR2X1 + PLACED ( 44840 24700 ) N
+ ;
+- gate154 NAND2X1 + PLACED ( 24320 39520 ) FS
+ ;
+- gate155_1 NAND2X1 + PLACED ( 17480 29640 ) FS
+ ;
+- gate155_2 NAND2X1 + PLACED ( 21280 24700 ) N
+ ;
+- gate155 NAND2X1 + PLACED ( 19000 29640 ) FS
+ ;
+- gate156 NAND3X1 + PLACED ( 20520 29640 ) FS
+ ;
+- gate157_1 NAND2X1 + PLACED ( 27360 29640 ) FS
+ ;
+- gate157_2 NAND2X1 + PLACED ( 24320 24700 ) N
+ ;
+- gate157 NAND2X1 + PLACED ( 25840 29640 ) FS
+ ;
+- gate158_1 NAND2X1 + PLACED ( 21280 44460 ) N
+ ;
+- gate158_2 NAND2X1 + PLACED ( 21280 39520 ) FS
+ ;
+- gate158 NAND2X1 + PLACED ( 19760 44460 ) N
+ ;
+- gate159_1 NAND2X1 + PLACED ( 25080 34580 ) N
+ ;
+- gate159_2 NAND2X1 + PLACED ( 22800 29640 ) FS
+ ;
+- gate159 NAND2X1 + PLACED ( 23560 34580 ) N
+ ;
+- gate160_1 NAND2X1 + PLACED ( 22800 39520 ) FS
+ ;
+- gate160_2 NAND2X1 + PLACED ( 24320 29640 ) FS
+ ;
+- gate160 NAND2X1 + PLACED ( 22800 44460 ) N
+ ;
+END COMPONENTS
+
+PINS 43 ;
+- N1 + NET N1 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 52820 43130 ) W ;
+- N4 + NET N4 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal5 ( -140 0 ) ( 140 280 )
+  + PLACED ( 52820 42940 ) W ;
+- N8 + NET N8 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 52820 33250 ) W ;
+- N11 + NET N11 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 32490 49400 ) S ;
+- N14 + NET N14 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal5 ( -140 0 ) ( 140 280 )
+  + PLACED ( 52820 33250 ) W ;
+- N17 + NET N17 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 36670 49400 ) S ;
+- N21 + NET N21 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 31730 49400 ) S ;
+- N24 + NET N24 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 38190 ) E ;
+- N27 + NET N27 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal4 ( -140 0 ) ( 140 280 )
+  + PLACED ( 36590 49400 ) S ;
+- N30 + NET N30 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 33250 ) E ;
+- N34 + NET N34 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 38950 ) E ;
+- N37 + NET N37 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 13870 49400 ) S ;
+- N40 + NET N40 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 29450 ) E ;
+- N43 + NET N43 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 10830 49400 ) S ;
+- N47 + NET N47 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 14630 49400 ) S ;
+- N50 + NET N50 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 2850 0 ) N ;
+- N53 + NET N53 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 8930 49400 ) S ;
+- N56 + NET N56 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 17290 ) E ;
+- N60 + NET N60 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 16150 ) E ;
+- N63 + NET N63 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 5890 0 ) N ;
+- N66 + NET N66 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 0 19570 ) E ;
+- N69 + NET N69 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 10070 0 ) N ;
+- N73 + NET N73 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 6650 0 ) N ;
+- N76 + NET N76 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 19950 0 ) N ;
+- N79 + NET N79 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 10830 0 ) N ;
+- N82 + NET N82 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 26030 0 ) N ;
+- N86 + NET N86 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 24130 0 ) N ;
+- N89 + NET N89 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 52820 5130 ) W ;
+- N92 + NET N92 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal4 ( -140 0 ) ( 140 280 )
+  + PLACED ( 23710 0 ) N ;
+- N95 + NET N95 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 47310 0 ) N ;
+- N99 + NET N99 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 44650 0 ) N ;
+- N102 + NET N102 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 52820 13490 ) W ;
+- N105 + NET N105 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 43510 0 ) N ;
+- N108 + NET N108 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 52820 18810 ) W ;
+- N112 + NET N112 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 52820 14630 ) W ;
+- N115 + NET N115 + DIRECTION INPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 52820 16150 ) W ;
+- N223 + NET N223 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 16910 0 ) N ;
+- N329 + NET N329 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal6 ( -140 0 ) ( 140 280 )
+  + PLACED ( 23710 0 ) N ;
+- N370 + NET N370 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal4 ( -140 0 ) ( 140 280 )
+  + PLACED ( 25950 0 ) N ;
+- N421 + NET N421 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal3 ( -70 0 ) ( 70 140 )
+  + PLACED ( 52820 27170 ) W ;
+- N430 + NET N430 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 20330 49400 ) S ;
+- N431 + NET N431 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 24130 49400 ) S ;
+- N432 + NET N432 + DIRECTION OUTPUT + USE SIGNAL
+  + LAYER metal2 ( -70 0 ) ( 70 140 )
+  + PLACED ( 23370 49400 ) S ;
+END PINS
+
+SPECIALNETS 2 ;
+- gnd  ( * gnd )
+  + USE GROUND
+ ;
+- vdd  ( * vdd )
+  + USE POWER
+ ;
+END SPECIALNETS
+
+NETS 251 ;
+- N1
+  ( PIN N1 ) ( gate56 A ) ( gate1 A )
+ ;
+- N4
+  ( PIN N4 ) ( gate138_1 A ) ( gate19 B ) ( gate2 A )
+ ;
+- N8
+  ( PIN N8 ) ( gate103 A ) ( gate20 A )
+ ;
+- N11
+  ( PIN N11 ) ( gate58 B ) ( gate3 A )
+ ;
+- N14
+  ( PIN N14 ) ( gate129 A ) ( gate21 A )
+ ;
+- N17
+  ( PIN N17 ) ( gate139_2 B ) ( gate22 B ) ( gate4 A )
+ ;
+- N21
+  ( PIN N21 ) ( gate105 B ) ( gate30 A )
+ ;
+- N24
+  ( PIN N24 ) ( gate60 B ) ( gate5 A )
+ ;
+- N27
+  ( PIN N27 ) ( gate130 B ) ( gate31 A )
+ ;
+- N30
+  ( PIN N30 ) ( gate140_2 B ) ( gate23 B ) ( gate6 A )
+ ;
+- N34
+  ( PIN N34 ) ( gate107 B ) ( gate32 A )
+ ;
+- N37
+  ( PIN N37 ) ( gate62 B ) ( gate7 A )
+ ;
+- N40
+  ( PIN N40 ) ( gate131 B ) ( gate33 A )
+ ;
+- N43
+  ( PIN N43 ) ( gate141_2 B ) ( gate24 B ) ( gate8 A )
+ ;
+- N47
+  ( PIN N47 ) ( gate109 B ) ( gate34 A )
+ ;
+- N50
+  ( PIN N50 ) ( gate63 B ) ( gate9 A )
+ ;
+- N53
+  ( PIN N53 ) ( gate132 B ) ( gate35 A )
+ ;
+- N56
+  ( PIN N56 ) ( gate142_2 B ) ( gate25 B ) ( gate10 A )
+ ;
+- N60
+  ( PIN N60 ) ( gate111 B ) ( gate36 A )
+ ;
+- N63
+  ( PIN N63 ) ( gate64 B ) ( gate11 A )
+ ;
+- N66
+  ( PIN N66 ) ( gate133 B ) ( gate37 A )
+ ;
+- N69
+  ( PIN N69 ) ( gate143_2 B ) ( gate26 B ) ( gate12 A )
+ ;
+- N73
+  ( PIN N73 ) ( gate113 B ) ( gate38 A )
+ ;
+- N76
+  ( PIN N76 ) ( gate65 B ) ( gate13 A )
+ ;
+- N79
+  ( PIN N79 ) ( gate134 B ) ( gate39 A )
+ ;
+- N82
+  ( PIN N82 ) ( gate144_2 B ) ( gate27 B ) ( gate14 A )
+ ;
+- N86
+  ( PIN N86 ) ( gate114 B ) ( gate40 A )
+ ;
+- N89
+  ( PIN N89 ) ( gate66 B ) ( gate15 A )
+ ;
+- N92
+  ( PIN N92 ) ( gate135 B ) ( gate41 A )
+ ;
+- N95
+  ( PIN N95 ) ( gate145_2 B ) ( gate28 B ) ( gate16 A )
+ ;
+- N99
+  ( PIN N99 ) ( gate115 B ) ( gate42 A )
+ ;
+- N102
+  ( PIN N102 ) ( gate67 B ) ( gate17 A )
+ ;
+- N105
+  ( PIN N105 ) ( gate136 B ) ( gate43 A )
+ ;
+- N108
+  ( PIN N108 ) ( gate146_2 B ) ( gate29 B ) ( gate18 A )
+ ;
+- N112
+  ( PIN N112 ) ( gate116 B ) ( gate44 A )
+ ;
+- N115
+  ( PIN N115 ) ( gate137 B ) ( gate45 A )
+ ;
+- N223
+  ( PIN N223 ) ( gate49 Y )
+ ;
+- N329
+  ( PIN N329 ) ( gate98 Y )
+ ;
+- N370
+  ( PIN N370 ) ( gate128 Y )
+ ;
+- N421
+  ( PIN N421 ) ( gate153 Y )
+ ;
+- N430
+  ( PIN N430 ) ( gate158 Y )
+ ;
+- N431
+  ( PIN N431 ) ( gate159 Y )
+ ;
+- N432
+  ( PIN N432 ) ( gate160 Y )
+ ;
+- N118
+  ( gate19 A ) ( gate1 Y )
+ ;
+- N119
+  ( gate21 B ) ( gate20 B ) ( gate2 Y )
+ ;
+- N122
+  ( gate22 A ) ( gate3 Y )
+ ;
+- N123
+  ( gate31 B ) ( gate30 B ) ( gate4 Y )
+ ;
+- N126
+  ( gate23 A ) ( gate5 Y )
+ ;
+- N127
+  ( gate33 B ) ( gate32 B ) ( gate6 Y )
+ ;
+- N130
+  ( gate24 A ) ( gate7 Y )
+ ;
+- N131
+  ( gate35 B ) ( gate34 B ) ( gate8 Y )
+ ;
+- N134
+  ( gate25 A ) ( gate9 Y )
+ ;
+- N135
+  ( gate37 B ) ( gate36 B ) ( gate10 Y )
+ ;
+- N138
+  ( gate26 A ) ( gate11 Y )
+ ;
+- N139
+  ( gate39 B ) ( gate38 B ) ( gate12 Y )
+ ;
+- N142
+  ( gate27 A ) ( gate13 Y )
+ ;
+- N143
+  ( gate41 B ) ( gate40 B ) ( gate14 Y )
+ ;
+- N146
+  ( gate28 A ) ( gate15 Y )
+ ;
+- N147
+  ( gate43 B ) ( gate42 B ) ( gate16 Y )
+ ;
+- N150
+  ( gate29 A ) ( gate17 Y )
+ ;
+- N151
+  ( gate45 B ) ( gate44 B ) ( gate18 Y )
+ ;
+- N154
+  ( gate50 B ) ( gate46_1 A ) ( gate19 Y )
+ ;
+- N157
+  ( gate68 B ) ( gate20 Y )
+ ;
+- N158
+  ( gate69 B ) ( gate21 Y )
+ ;
+- N159
+  ( gate51 B ) ( gate46_1 B ) ( gate22 Y )
+ ;
+- N162
+  ( gate52 B ) ( gate46_2 A ) ( gate23 Y )
+ ;
+- N165
+  ( gate53 B ) ( gate46_2 B ) ( gate24 Y )
+ ;
+- N168
+  ( gate54 B ) ( gate46_3 A ) ( gate25 Y )
+ ;
+- N171
+  ( gate55 B ) ( gate46_3 B ) ( gate26 Y )
+ ;
+- N174
+  ( gate57 B ) ( gate46_4 A ) ( gate27 Y )
+ ;
+- N177
+  ( gate59 B ) ( gate46_4 B ) ( gate28 Y )
+ ;
+- N180
+  ( gate61 B ) ( gate46_5 A ) ( gate29 Y )
+ ;
+- N183
+  ( gate70 B ) ( gate30 Y )
+ ;
+- N184
+  ( gate78 B ) ( gate31 Y )
+ ;
+- N185
+  ( gate71 B ) ( gate32 Y )
+ ;
+- N186
+  ( gate79 B ) ( gate33 Y )
+ ;
+- N187
+  ( gate72 B ) ( gate34 Y )
+ ;
+- N188
+  ( gate80 B ) ( gate35 Y )
+ ;
+- N189
+  ( gate73 B ) ( gate36 Y )
+ ;
+- N190
+  ( gate81 B ) ( gate37 Y )
+ ;
+- N191
+  ( gate74 B ) ( gate38 Y )
+ ;
+- N192
+  ( gate82 B ) ( gate39 Y )
+ ;
+- N193
+  ( gate75 B ) ( gate40 Y )
+ ;
+- N194
+  ( gate83 B ) ( gate41 Y )
+ ;
+- N195
+  ( gate76 B ) ( gate42 Y )
+ ;
+- N196
+  ( gate84 B ) ( gate43 Y )
+ ;
+- N197
+  ( gate77 B ) ( gate44 Y )
+ ;
+- N198
+  ( gate85 B ) ( gate45 Y )
+ ;
+- N199
+  ( gate49 A ) ( gate48 A ) ( gate47 A ) ( gate46 Y )
+ ;
+- N203
+  ( gate61 A ) ( gate59 A ) ( gate57 A ) ( gate55 A ) ( gate54 A ) ( gate53 A )
+  ( gate52 A ) ( gate51 A ) ( gate50 A ) ( gate47 Y )
+ ;
+- N213
+  ( gate67 A ) ( gate66 A ) ( gate65 A ) ( gate64 A ) ( gate63 A ) ( gate62 A )
+  ( gate60 A ) ( gate58 A ) ( gate56 B ) ( gate48 Y )
+ ;
+- N224
+  ( gate69 A ) ( gate68 A ) ( gate50 Y )
+ ;
+- N227
+  ( gate78 A ) ( gate70 A ) ( gate51 Y )
+ ;
+- N230
+  ( gate79 A ) ( gate71 A ) ( gate52 Y )
+ ;
+- N233
+  ( gate80 A ) ( gate72 A ) ( gate53 Y )
+ ;
+- N236
+  ( gate81 A ) ( gate73 A ) ( gate54 Y )
+ ;
+- N239
+  ( gate82 A ) ( gate74 A ) ( gate55 Y )
+ ;
+- N242
+  ( gate138_1 B ) ( gate56 Y )
+ ;
+- N243
+  ( gate83 A ) ( gate75 A ) ( gate57 Y )
+ ;
+- N246
+  ( gate139_1 A ) ( gate58 Y )
+ ;
+- N247
+  ( gate84 A ) ( gate76 A ) ( gate59 Y )
+ ;
+- N250
+  ( gate140_1 A ) ( gate60 Y )
+ ;
+- N251
+  ( gate85 A ) ( gate77 A ) ( gate61 Y )
+ ;
+- N254
+  ( gate141_1 A ) ( gate62 Y )
+ ;
+- N255
+  ( gate142_1 A ) ( gate63 Y )
+ ;
+- N256
+  ( gate143_1 A ) ( gate64 Y )
+ ;
+- N257
+  ( gate144_1 A ) ( gate65 Y )
+ ;
+- N258
+  ( gate145_1 A ) ( gate66 Y )
+ ;
+- N259
+  ( gate146_1 A ) ( gate67 Y )
+ ;
+- N260
+  ( gate99 B ) ( gate86_1 A ) ( gate68 Y )
+ ;
+- N263
+  ( gate87 A ) ( gate69 Y )
+ ;
+- N264
+  ( gate100 B ) ( gate86_1 B ) ( gate70 Y )
+ ;
+- N267
+  ( gate101 B ) ( gate86_2 A ) ( gate71 Y )
+ ;
+- N270
+  ( gate102 B ) ( gate86_2 B ) ( gate72 Y )
+ ;
+- N273
+  ( gate104 B ) ( gate86_3 A ) ( gate73 Y )
+ ;
+- N276
+  ( gate106 B ) ( gate86_3 B ) ( gate74 Y )
+ ;
+- N279
+  ( gate108 B ) ( gate86_4 A ) ( gate75 Y )
+ ;
+- N282
+  ( gate110 B ) ( gate86_4 B ) ( gate76 Y )
+ ;
+- N285
+  ( gate112 B ) ( gate86_5 A ) ( gate77 Y )
+ ;
+- N288
+  ( gate88 A ) ( gate78 Y )
+ ;
+- N289
+  ( gate89 A ) ( gate79 Y )
+ ;
+- N290
+  ( gate90 A ) ( gate80 Y )
+ ;
+- N291
+  ( gate91 A ) ( gate81 Y )
+ ;
+- N292
+  ( gate92 A ) ( gate82 Y )
+ ;
+- N293
+  ( gate93 A ) ( gate83 Y )
+ ;
+- N294
+  ( gate94 A ) ( gate84 Y )
+ ;
+- N295
+  ( gate95 A ) ( gate85 Y )
+ ;
+- N296
+  ( gate98 A ) ( gate97 A ) ( gate96 A ) ( gate86 Y )
+ ;
+- N300
+  ( gate117 B ) ( gate87 Y )
+ ;
+- N301
+  ( gate118 B ) ( gate88 Y )
+ ;
+- N302
+  ( gate119 B ) ( gate89 Y )
+ ;
+- N303
+  ( gate120 B ) ( gate90 Y )
+ ;
+- N304
+  ( gate121 B ) ( gate91 Y )
+ ;
+- N305
+  ( gate122 B ) ( gate92 Y )
+ ;
+- N306
+  ( gate123 B ) ( gate93 Y )
+ ;
+- N307
+  ( gate124 B ) ( gate94 Y )
+ ;
+- N308
+  ( gate125 B ) ( gate95 Y )
+ ;
+- N309
+  ( gate112 A ) ( gate110 A ) ( gate108 A ) ( gate106 A ) ( gate104 A )
+  ( gate102 A ) ( gate101 A ) ( gate100 A ) ( gate99 A ) ( gate96 Y )
+ ;
+- N319
+  ( gate116 A ) ( gate115 A ) ( gate114 A ) ( gate113 A ) ( gate111 A )
+  ( gate109 A ) ( gate107 A ) ( gate105 A ) ( gate103 B ) ( gate97 Y )
+ ;
+- N330
+  ( gate117 A ) ( gate99 Y )
+ ;
+- N331
+  ( gate118 A ) ( gate100 Y )
+ ;
+- N332
+  ( gate119 A ) ( gate101 Y )
+ ;
+- N333
+  ( gate120 A ) ( gate102 Y )
+ ;
+- N334
+  ( gate138_2 A ) ( gate103 Y )
+ ;
+- N335
+  ( gate121 A ) ( gate104 Y )
+ ;
+- N336
+  ( gate139_1 B ) ( gate105 Y )
+ ;
+- N337
+  ( gate122 A ) ( gate106 Y )
+ ;
+- N338
+  ( gate140_1 B ) ( gate107 Y )
+ ;
+- N339
+  ( gate123 A ) ( gate108 Y )
+ ;
+- N340
+  ( gate141_1 B ) ( gate109 Y )
+ ;
+- N341
+  ( gate124 A ) ( gate110 Y )
+ ;
+- N342
+  ( gate142_1 B ) ( gate111 Y )
+ ;
+- N343
+  ( gate125 A ) ( gate112 Y )
+ ;
+- N344
+  ( gate143_1 B ) ( gate113 Y )
+ ;
+- N345
+  ( gate144_1 B ) ( gate114 Y )
+ ;
+- N346
+  ( gate145_1 B ) ( gate115 Y )
+ ;
+- N347
+  ( gate146_1 B ) ( gate116 Y )
+ ;
+- N348
+  ( gate126_1 A ) ( gate117 Y )
+ ;
+- N349
+  ( gate126_1 B ) ( gate118 Y )
+ ;
+- N350
+  ( gate126_2 A ) ( gate119 Y )
+ ;
+- N351
+  ( gate126_2 B ) ( gate120 Y )
+ ;
+- N352
+  ( gate126_3 A ) ( gate121 Y )
+ ;
+- N353
+  ( gate126_3 B ) ( gate122 Y )
+ ;
+- N354
+  ( gate126_4 A ) ( gate123 Y )
+ ;
+- N355
+  ( gate126_4 B ) ( gate124 Y )
+ ;
+- N356
+  ( gate126_5 A ) ( gate125 Y )
+ ;
+- N357
+  ( gate128 A ) ( gate127 A ) ( gate126 Y )
+ ;
+- N360
+  ( gate137 A ) ( gate136 A ) ( gate135 A ) ( gate134 A ) ( gate133 A )
+  ( gate132 A ) ( gate131 A ) ( gate130 A ) ( gate129 B ) ( gate127 Y )
+ ;
+- N371
+  ( gate138_2 B ) ( gate129 Y )
+ ;
+- N372
+  ( gate139_2 A ) ( gate130 Y )
+ ;
+- N373
+  ( gate140_2 A ) ( gate131 Y )
+ ;
+- N374
+  ( gate141_2 A ) ( gate132 Y )
+ ;
+- N375
+  ( gate142_2 A ) ( gate133 Y )
+ ;
+- N376
+  ( gate143_2 A ) ( gate134 Y )
+ ;
+- N377
+  ( gate144_2 A ) ( gate135 Y )
+ ;
+- N378
+  ( gate145_2 A ) ( gate136 Y )
+ ;
+- N379
+  ( gate146_2 A ) ( gate137 Y )
+ ;
+- N380
+  ( gate147 A ) ( gate138 Y )
+ ;
+- N381
+  ( gate160_1 A ) ( gate159_1 A ) ( gate158_1 A ) ( gate148_1 A ) ( gate139 Y )
+ ;
+- N386
+  ( gate159_1 B ) ( gate158_1 B ) ( gate157_1 A ) ( gate155_1 A ) ( gate154 A )
+  ( gate148_1 B ) ( gate140 Y )
+ ;
+- N393
+  ( gate157_1 B ) ( gate156 B ) ( gate155_1 B ) ( gate149 A ) ( gate148_2 A )
+  ( gate141 Y )
+ ;
+- N399
+  ( gate158_2 B ) ( gate156 A ) ( gate155_2 B ) ( gate148_2 B ) ( gate142 Y )
+ ;
+- N404
+  ( gate150 A ) ( gate148_3 A ) ( gate143 Y )
+ ;
+- N407
+  ( gate157_2 A ) ( gate151 A ) ( gate148_3 B ) ( gate144 Y )
+ ;
+- N411
+  ( gate152 A ) ( gate148_4 A ) ( gate145 Y )
+ ;
+- N414
+  ( gate148_4 B ) ( gate146 Y )
+ ;
+- N415
+  ( gate153 A ) ( gate147 Y )
+ ;
+- N416
+  ( gate153 B ) ( gate148 Y )
+ ;
+- N417
+  ( gate154 B ) ( gate149 Y )
+ ;
+- N418
+  ( gate155_2 A ) ( gate150 Y )
+ ;
+- N419
+  ( gate156 C ) ( gate151 Y )
+ ;
+- N420
+  ( gate157_2 B ) ( gate152 Y )
+ ;
+- N422
+  ( gate160_1 B ) ( gate158_2 A ) ( gate154 Y )
+ ;
+- N425
+  ( gate160_2 A ) ( gate159_2 A ) ( gate155 Y )
+ ;
+- N428
+  ( gate159_2 B ) ( gate156 Y )
+ ;
+- N429
+  ( gate160_2 B ) ( gate157 Y )
+ ;
+- N199_1
+  ( gate46_5 B ) ( gate46_1 Y )
+ ;
+- N199_2
+  ( gate46_6 A ) ( gate46_2 Y )
+ ;
+- N199_3
+  ( gate46_6 B ) ( gate46_3 Y )
+ ;
+- N199_4
+  ( gate46_7 A ) ( gate46_4 Y )
+ ;
+- N199_5
+  ( gate46_7 B ) ( gate46_5 Y )
+ ;
+- N199_6
+  ( gate46 A ) ( gate46_6 Y )
+ ;
+- N199_7
+  ( gate46 B ) ( gate46_7 Y )
+ ;
+- N296_1
+  ( gate86_5 B ) ( gate86_1 Y )
+ ;
+- N296_2
+  ( gate86_6 A ) ( gate86_2 Y )
+ ;
+- N296_3
+  ( gate86_6 B ) ( gate86_3 Y )
+ ;
+- N296_4
+  ( gate86_7 A ) ( gate86_4 Y )
+ ;
+- N296_5
+  ( gate86_7 B ) ( gate86_5 Y )
+ ;
+- N296_6
+  ( gate86 A ) ( gate86_6 Y )
+ ;
+- N296_7
+  ( gate86 B ) ( gate86_7 Y )
+ ;
+- N357_1
+  ( gate126_5 B ) ( gate126_1 Y )
+ ;
+- N357_2
+  ( gate126_6 A ) ( gate126_2 Y )
+ ;
+- N357_3
+  ( gate126_6 B ) ( gate126_3 Y )
+ ;
+- N357_4
+  ( gate126_7 A ) ( gate126_4 Y )
+ ;
+- N357_5
+  ( gate126_7 B ) ( gate126_5 Y )
+ ;
+- N357_6
+  ( gate126 A ) ( gate126_6 Y )
+ ;
+- N357_7
+  ( gate126 B ) ( gate126_7 Y )
+ ;
+- N380_1
+  ( gate138 A ) ( gate138_1 Y )
+ ;
+- N380_2
+  ( gate138 B ) ( gate138_2 Y )
+ ;
+- N381_1
+  ( gate139 A ) ( gate139_1 Y )
+ ;
+- N381_2
+  ( gate139 B ) ( gate139_2 Y )
+ ;
+- N386_1
+  ( gate140 A ) ( gate140_1 Y )
+ ;
+- N386_2
+  ( gate140 B ) ( gate140_2 Y )
+ ;
+- N393_1
+  ( gate141 A ) ( gate141_1 Y )
+ ;
+- N393_2
+  ( gate141 B ) ( gate141_2 Y )
+ ;
+- N399_1
+  ( gate142 A ) ( gate142_1 Y )
+ ;
+- N399_2
+  ( gate142 B ) ( gate142_2 Y )
+ ;
+- N404_1
+  ( gate143 A ) ( gate143_1 Y )
+ ;
+- N404_2
+  ( gate143 B ) ( gate143_2 Y )
+ ;
+- N407_1
+  ( gate144 A ) ( gate144_1 Y )
+ ;
+- N407_2
+  ( gate144 B ) ( gate144_2 Y )
+ ;
+- N411_1
+  ( gate145 A ) ( gate145_1 Y )
+ ;
+- N411_2
+  ( gate145 B ) ( gate145_2 Y )
+ ;
+- N414_1
+  ( gate146 A ) ( gate146_1 Y )
+ ;
+- N414_2
+  ( gate146 B ) ( gate146_2 Y )
+ ;
+- N416_1
+  ( gate148_5 A ) ( gate148_1 Y )
+ ;
+- N416_2
+  ( gate148_5 B ) ( gate148_2 Y )
+ ;
+- N416_3
+  ( gate148_6 A ) ( gate148_3 Y )
+ ;
+- N416_4
+  ( gate148_6 B ) ( gate148_4 Y )
+ ;
+- N416_5
+  ( gate148 A ) ( gate148_5 Y )
+ ;
+- N416_6
+  ( gate148 B ) ( gate148_6 Y )
+ ;
+- N425_1
+  ( gate155 A ) ( gate155_1 Y )
+ ;
+- N425_2
+  ( gate155 B ) ( gate155_2 Y )
+ ;
+- N429_1
+  ( gate157 A ) ( gate157_1 Y )
+ ;
+- N429_2
+  ( gate157 B ) ( gate157_2 Y )
+ ;
+- N430_1
+  ( gate158 A ) ( gate158_1 Y )
+ ;
+- N430_2
+  ( gate158 B ) ( gate158_2 Y )
+ ;
+- N431_1
+  ( gate159 A ) ( gate159_1 Y )
+ ;
+- N431_2
+  ( gate159 B ) ( gate159_2 Y )
+ ;
+- N432_1
+  ( gate160 A ) ( gate160_1 Y )
+ ;
+- N432_2
+  ( gate160 B ) ( gate160_2 Y )
+ ;
+END NETS
+
+END DESIGN
