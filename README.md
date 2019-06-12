@@ -10,7 +10,7 @@ Each folder contains
   1. The design file (.v)
   2. Design constraint file (.sdc)
   3. Standard delay file (.sdf)
-  4. Layout information (.def, .sdf)
+  4. Layout information (.def, .tdf)
 ```
   
 The designs were synthesized using Synopsys Design Compiler.
